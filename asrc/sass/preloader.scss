@@ -1,0 +1,58 @@
+#cube-loader {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+    background-color: #000000;
+    transition: 0.5s;
+    & .caption {
+      margin: auto;
+    }
+    .cube-loader {
+      width: 300px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      @media (max-width: 576.98px){
+        width: 200px;
+      }
+    }
+    .pre1 { 
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .pre2 { 
+      width: 150%;
+      margin-left: -10%;
+      animation: cube 1.5s infinite linear;
+      @media (max-width: 576.98px){
+        width: 100%;
+        margin-left: 5%;
+      }
+    }
+  };
+  #cube-loader.done {
+    transition: 0.5s;
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  @keyframes cube {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
