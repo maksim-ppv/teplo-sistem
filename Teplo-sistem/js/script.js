@@ -4027,7 +4027,7 @@ if($('.slider').length>0){
 
 if($('.slider-three').length>0){
 	$('.slider-three').slick({
-	// autoplay: true,
+	autoplay: true,
 	infinite: true,
 	dots: false,
 	arrows: true,
