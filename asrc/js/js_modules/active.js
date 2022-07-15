@@ -56,9 +56,9 @@ if($('.slider').length>0){
 
 if($('.slider-three').length>0){
 	$('.slider-three').slick({
-	autoplay: true,
+	// autoplay: true,
 	infinite: true,
-	dots: false,
+	dots: true,
 	arrows: true,
 	fade: false,
 	accessibility:false,
@@ -67,7 +67,7 @@ if($('.slider-three').length>0){
 	autoplaySpeed: 3000,
 	adaptiveHeight: false,
 	//asNavFor:'',
-	// appendDots:$('.step-slider__controls'),
+	appendDots:$('.step-slider__controls'),
 	// appendArrows:$('.slider-btn__group'),
 	// nextArrow:'<button type="button" class="slider__prev slick-prev"></button>',
 	// prevArrow:'<button type="button" class="slider__next slick-next"></button>',

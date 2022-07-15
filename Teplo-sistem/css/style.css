@@ -1815,6 +1815,40 @@ button {
   display: inline-block;
 }
 
+.step-slider__controls {
+  display: none;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin: 0px 10px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #FFCC00;
+}
+
 .hide {
   opacity: 0;
   visibility: hidden;
@@ -2730,8 +2764,10 @@ button {
 
   .number {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 45%;
-            flex: 0 1 45%;
+        -ms-flex: 0 1 30%;
+            flex: 0 1 30%;
+    font-size: 70px;
+    line-height: 100px;
     text-align: center;
     margin-bottom: 0;
     padding-right: 10px;
@@ -2739,6 +2775,7 @@ button {
 
   .number__text {
     display: block;
+    text-align: left;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 75%;
             flex: 0 1 75%;
@@ -2782,6 +2819,10 @@ button {
   .slider-item__price span {
     display: block;
     font-size: 24px;
+  }
+
+  .step-slider__controls {
+    display: block;
   }
 }
 

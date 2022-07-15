@@ -55,7 +55,9 @@
         font-size: 100px
         line-height: 140px
     @media (max-width: 576.98px)
-        flex: 0 1 45%
+        flex: 0 1 30%
+        font-size: 70px
+        line-height: 100px
         text-align: center
         margin-bottom: 0
         padding-right: 10px
@@ -67,6 +69,7 @@
     max-width: 365px
     @media (max-width: 576.98px)
         display: block
+        text-align: left
         flex: 0 1 75%
         max-width: 100%
         font-size: 22px
@@ -189,3 +192,28 @@
     @media (max-width: 1199px)
         padding: 10px 25px
         
+
+
+
+.step-slider__controls
+    display: none
+    @media (max-width: 576.98px)
+        display: block
+.slick-dots
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 10px
+    li
+        button
+            font-size: 0
+            width: 10px
+            height: 10px
+            background-color: transparent
+            border: 1px solid #ffffff
+            border-radius: 50%
+            margin: 0px 10px
+            transition: 1s
+        &.slick-active
+            button
+                background-color: #FFCC00
