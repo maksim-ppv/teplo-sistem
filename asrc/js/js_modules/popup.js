@@ -1,6 +1,5 @@
 const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
-const video = document.querySelectorAll('.video');
 
 const lockPadding = document.querySelectorAll(".lock-padding");
 
@@ -102,13 +101,7 @@ document.addEventListener('keydown', function (e) {
 	}
 });
 
-video.forEach((item,i)=>{
-	item.addEventListener('click', event=>{
-		const elem = document.getElementById(i);
-		elem.classList.add('show_rel')
-		elem.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-	});
-});
+
 
 
 (function () {

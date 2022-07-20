@@ -162,3 +162,13 @@ forms();
 
 
 
+function maskclear(n){
+    if(n.val()==""){
+        n.inputmask('remove');
+        if(!n.hasClass('l')){
+            n.val(n.attr('data-value'));
+        }
+        n.removeClass('focus');
+        n.parent().removeClass('focus');
+    }
+    }

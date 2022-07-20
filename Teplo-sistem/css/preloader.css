@@ -11,7 +11,7 @@
   opacity: 1;
   visibility: visible;
   z-index: 999;
-  background-color: #000000;
+  background: #282728;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -22,7 +22,7 @@
 }
 
 #cube-loader .cube-loader {
-  width: 300px;
+  width: 400px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,21 +36,31 @@
   position: relative;
 }
 
-#cube-loader .pre1 {
+#cube-loader .preloader-logo {
   width: 100%;
+}
+
+#cube-loader .preloader-nutsone {
+  width: 50px;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 77%;
+  top: 30%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  animation: cube ease-in-out 2.5s reverse infinite;
 }
 
-#cube-loader .pre2 {
-  width: 150%;
-  margin-left: -10%;
-  -webkit-animation: cube 1.5s infinite linear;
-          animation: cube 1.5s infinite linear;
+#cube-loader .preloader-nutstwo {
+  width: 35px;
+  position: absolute;
+  left: 65%;
+  top: 94%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: cube linear 2.5s infinite;
+          animation: cube linear 2.5s infinite;
 }
 
 #cube-loader.done {
@@ -88,11 +98,6 @@
 
 @media (max-width: 576.98px) {
   #cube-loader .cube-loader {
-    width: 200px;
-  }
-
-  #cube-loader .pre2 {
-    width: 100%;
-    margin-left: 5%;
+    width: 300px;
   }
 }

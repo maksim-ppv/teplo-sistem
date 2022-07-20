@@ -1,39 +1,102 @@
 
 // указание размера адаптивного шрифта
 // @include adaptiv-font(50,20)
-
+.wrapper
+    position: relative
 .header
     overflow: hidden
-    position: relative
     background: url('../img/bg-header.png') center / cover no-repeat
-//===============================================================
+    padding-top: 128px
+    @media (max-width: 1199px)
+        padding-top: 118px
+    @media (max-width: 991.98px)
+        padding-top: 96px
+    @media (max-width: 576.98px)
+        padding-top: 67px
 
+
+
+
+//===============================================================
+.navbar-header
+    height: 128px
+    position: absolute
+    top: 0
+    width: 101%
+    left: 0
+    @media (max-width: 1199px)
+        height: 118px
+    @media (max-width: 991.98px)
+        height: 96px
+    @media (max-width: 991.98px)
+        height: 91px
+    @media (max-width: 576.98px)
+        height: 67px
 .navbar 
     display: flex
-    flex-wrap: wrap
     justify-content: space-between 
     align-items: center
     padding: 25px 0px
-    @media (max-width: 1400px) 
-        justify-content: space-around
+    @media (max-width: 1199px)
+        padding: 20px 0px
+    @media (max-width: 991.98px)
+        padding: 15px 0px
+    @media (max-width: 767.98px)
+        padding: 15px
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25)
+        position: relative
+        z-index: 15
+    @media (max-width: 576.98px)
+        padding: 15px 10px
+.fixed
+    position: fixed
+    z-index: 122
+    transition: 0.5s
+    background: #282728
+    .navbar
+        @media (max-width: 767.98px)
+            border-bottom: none
+    // background: #ffffff
+
+
+
         
 .navbar-item
 .navbar__logo
     @media (max-width: 1400px) 
-        flex: 1
-        margin: 0px 300px 10px
+        flex: 0 1 auto
     display: flex
     max-width: 400px
-    span
-        padding-left: 10px
-        font-weight: 300
-        font-size: 18px
-        line-height: 22px
+    @media (max-width: 991.98px)
+        width: 300px
+        align-items: center
+    @media (max-width: 767.98px)
+        position: relative
+        z-index: 20
+    img
         @media (max-width: 576.98px)
-            display: none
+            width: 95px
+        width: 100%
 .navbar__logo-desription
-    min-width: 182px 
+    padding-left: 10px
+    font-weight: 300
+    font-size: 18px
+    line-height: 22px
+    max-width: 182px
+    @media (max-width: 991.98px)
+        min-width: 120px 
+        line-height: 16px
+        font-size: 14px
+    @media (max-width: 576.98px)
+        font-size: 10px
+        width: 82px
+        line-height: 12px
 .navbar__mail 
+    @media (max-width: 1400px)
+        display: none
+    @media (max-width: 767.98px)
+        display: block
+        margin-bottom: 10px
 .data 
     display: flex
     align-items: center
@@ -75,6 +138,9 @@
 
         
 .navbar__contact
+    @media (max-width: 767.98px)
+        margin-bottom: 25px
+    
 .phone
 .navbar-phone 
     color: #FFCC00 
@@ -84,12 +150,19 @@
     border-bottom: 1px solid transparent
     @media (max-width: 1199px)
         font-size: 18px
+    @media (max-width: 991.98px)
+        font-size: 16px
+    @media (max-width: 767.98px)
+        color:#ffffff
+
+
 .navbar-phone:hover
     border-bottom: 1px solid #FFCC00
     transition: 0.5s
 .navbar__callback
     @media (max-width: 767.98px)
-        display: none
+        margin-left: 10px
+
 .navbar__popup 
     border: 1px solid #FFFFFF
     border-radius: 10px 
@@ -101,6 +174,8 @@
     transition: 0.5s
     @media (max-width: 1199px)
         font-size: 16px 
+    @media (max-width: 991.98px)
+        padding: 15px 20px
 .navbar__popup:hover
     transition: 0.5s
     border: 1px solid transparent
@@ -109,50 +184,106 @@
 .popup-link 
 
 
+
+.burger
+    display: none
+    @media (max-width: 767.98px)
+        display: flex
+        align-items: center
+.mobile__phone
+    img
+        max-width: 100%
+    margin-right: 15px
+    width: 20px
+    height: 20px
+
+
 //===============================================================
 
 .header__menu 
     position: relative
     border-top: 1px solid rgba(255, 255, 255, 0.25)
     border-bottom: 1px solid rgba(255, 255, 255, 0.25)
+    @media (max-width: 767.98px)
+        border: none
+        z-index: 10
+        opacity: 0
+        visibility: hidden
+        position: fixed
+        width: 70%
+        padding-bottom: 50px
+        left: -75%
+        transition: 0.5s
+        top: 0
+        background: #282728
+.header__menu.show
+    left: 0
+    transition: 0.5s
+
 .container 
-.menu 
+.menu
+    @media (max-width: 767.98px)
+        flex-direction: column
+        margin-top: 100px
+        align-items: flex-start
+        justify-content: space-between
+    @media (max-width: 576.98px)
+        margin-top: 80px
 .row 
 .menu-items
     flex: 63%
     max-width: 1220px
     justify-content: space-between
     @media (max-width: 767.98px)
-        display: none
+        align-items: flex-start
+        flex-direction: column
+        flex-wrap: wrap
+    
 .menu-item 
     margin: 5px
     font-weight: 400
     font-size: 22px
     transition: 0.3s
     color: #ffffff
+    display: block
     @media (max-width: 1199px)
         font-size: 18px
+    @media (max-width: 991.98px)
+        font-size: 16px
+    @media (max-width: 767.98px)
+        font-size: 20px
+        margin: 10px
+        
 .menu-item:hover
     color: #FFCC00
     transition: 0.3s
 .menu__social
     text-align: right
     @media (max-width: 767.98px)
-        display: none
+        text-align: center
+    
+
 .social-item
     display: inline-block
     margin: 15px 0px 15px 25px
+    @media (max-width: 991.98px)
+        width: 39px
+        height: 39px
+    @media (max-width: 767.98px)
+        margin: 15px
+    @media (max-width: 576.98px)
+        margin: 12px
+    img
+        max-width: 100%
 .social-img
     transition: 0.2s
+
 .social-img:hover
-    transform: scale(1.2)
+    margin-top: -5px
     transition: 0.2s
         
 
-.burger
-    display: none
-    @media (max-width: 767.98px)
-        display: block
+
 
 //===============================================================
 
@@ -183,15 +314,20 @@
     margin-bottom: 20px
     @media (max-width: 1400px)
         padding-top: 100px
+        line-height: 70px
     @media (max-width: 1199px)
         padding-top: 60px
+        line-height: 65px
     @media (max-width: 991.98px)
         font-size: 50px
+        line-height: 50px
     @media (max-width: 767.98px)
         padding-top: 40px
         text-align: center
     @media (max-width: 576.98px)
         font-size: 40px
+        padding-top: 30px
+        margin-bottom: 10px
         text-align: center
 .header__subtitle 
     font-weight: 300
@@ -203,9 +339,11 @@
     @media (max-width: 991.98px)
         font-size: 25px
     @media (max-width: 767.98px)
+        max-width: 290px
         font-size: 23px
-    @media (max-width: 576.98px)
         text-align: center
+    @media (max-width: 576.98px)
+        font-size: 20px
 .header__points 
     display: flex
     margin-bottom: 82px
@@ -216,6 +354,8 @@
         // flex-direction: row
         // flex-wrap: wrap
         justify-content: space-around
+    @media (max-width: 576.98px)
+        margin-bottom: 0px
 .header__point
     font-weight: 400
     font-size: 20px
@@ -243,6 +383,10 @@
         margin-bottom: 100px
     @media (max-width: 767.98px)
         margin-bottom: 80px
+    @media (max-width: 576.98px)
+        width: 100%
+        padding: 0px 40px
+        
     form
         @media (max-width: 767.98px)
             display: flex
@@ -254,6 +398,9 @@
     line-height: 27px
     margin-bottom: 25px
     display: inline-block
+    @media (max-width: 576.98px)
+        font-size: 15px
+        line-height: 16px
 .input-phone
     background: #FFFFFF
     box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.4)
@@ -274,8 +421,13 @@
         width: 350px
     @media (max-width: 767.98px)
         margin-right: 0
+        height: 63px
     @media (max-width: 576.98px)
+        height: 50px
         width: 100%
+        color: rgba(0, 0, 0, 0.38)
+        font-size: 13px
+        padding-left: 20px
 
 
 .header__button 
@@ -283,6 +435,12 @@
     height: 73px
     @media (max-width: 1199px)
         width: 350px
+    @media (max-width: 767.98px)
+        height: 63px
+    @media (max-width: 576.98px)
+        height: 50px
+        font-size: 16px
+        line-height: 15px
     position: relative
     animation: run 1s infinite
     margin-top: 20px
@@ -296,6 +454,10 @@
         position: absolute
         background: url('../img/button-left.svg') center / cover no-repeat
         animation: run-left linear 1s alternate infinite
+        @media (max-width: 576.98px)
+            width: 20px
+            height: 10px
+            top: 52%
 
     &:after
         content: ''
@@ -308,6 +470,10 @@
         position: absolute
         background: url('../img/button-right.svg') center / cover no-repeat
         animation: run-right linear 1s alternate infinite
+        @media (max-width: 576.98px)
+            width: 20px
+            height: 10px
+            top: 52%
 
 .button 
     font-family: 'Inter'
@@ -324,11 +490,13 @@
     @media (max-width: 576.98px)
         width: 100%
         text-align: center
+        box-shadow: 2.26471px 2.83088px 0px #D3AC0E
+        border-radius: 5.66176px
 
 .button:hover
     transition: 0.5s
     background: linear-gradient(91.82deg, #FFCC00 2.68%, #F4CD40 69.26%), #FFCC00
-    box-shadow: 0px 4px 71px rgba(245, 218, 110, 0.6), 4px 5px 0px #D3AC0E
+    box-shadow: 0px 2px 31px rgba(245, 218, 110, 0.6), 4px 5px 0px #D3AC0E
           
 .header__men 
     display: flex

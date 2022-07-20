@@ -1,17 +1,24 @@
+const menu = document.querySelector('.header__menu');
 const btn = document.querySelector('.menu-button');
-const menu = document.querySelector('.mobile__navbar');
+const navbar = document.querySelector('.navbar-header');
 
 
 
 const modal = ()=>{
-   menu.classList.toggle('hide');
-   menu.classList.toggle('show');
+
+ 
+      menu.classList.toggle('show');
+
+   if ($(window).scrollTop() < 300) {
+      navbar.classList.toggle('fixed');
+    }
    btn.classList.toggle('line_active');
+
 }
 
 menu.addEventListener('click', event => {
    const target = event.target
-   if(!target.closest('.menu-mobile__body')){
+   if(!target.closest('.menu')){
       modal();
    }
 });

@@ -7,38 +7,44 @@
     opacity: 1;
     visibility: visible;
     z-index: 999;
-    background-color: #000000;
+    background: #282728;
     transition: 0.5s;
     & .caption {
       margin: auto;
     }
     .cube-loader {
-      width: 300px;
+      width: 400px;
       margin: auto;
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
       @media (max-width: 576.98px){
-        width: 200px;
+        width: 300px;
       }
     }
-    .pre1 { 
+    .preloader-logo { 
       width: 100%;
+    }
+    .preloader-nutsone { 
+      width: 50px;
       position: absolute;
-      left: 50%;
-      top: 50%;
+      left: 77%;
+      top: 30%;
       transform: translate(-50%, -50%);
+      animation: cube ease-in-out 2.5s reverse infinite;
+
     }
-    .pre2 { 
-      width: 150%;
-      margin-left: -10%;
-      animation: cube 1.5s infinite linear;
-      @media (max-width: 576.98px){
-        width: 100%;
-        margin-left: 5%;
-      }
+    .preloader-nutstwo{ 
+      width: 35px;
+      position: absolute;
+      left: 65%;
+      top: 94%;
+      transform: translate(-50%, -50%);
+      animation: cube linear 2.5s infinite;
+      
     }
+    
   };
   #cube-loader.done {
     transition: 0.5s;
@@ -55,4 +61,3 @@
       transform: rotate(360deg);
     }
 }
-
