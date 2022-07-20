@@ -41,6 +41,8 @@
         padding: 20px 35px 0px
     @media (max-width: 576.98px)
         padding: 10px 20px 10px
+    @media (max-width: 320px)
+        display: block
 .particular__content 
     flex: 1 1 67%
     @media (max-width: 576.98px)
@@ -54,10 +56,17 @@
     @media (max-width: 767.98px)
         font-size: 25px
         line-height: 40px
+    @media (max-width: 576.98px)
+        line-height: 35px
+    @media (max-width: 320px)
+        font-size: 18px
+        line-height: 28px
 .particular__title-row
     display: flex
     align-items: center
     margin-bottom: 34px
+    @media (max-width: 320px)
+        margin-bottom: 24px
 .particular__title-line
     display: inline-block
     width: 145px
@@ -95,6 +104,9 @@
     @media (max-width: 576.98px)
         margin-bottom: 15px
         line-height: 120%
+        font-size: 16px
+    @media (max-width: 320px)
+        font-size: 12px
 
     
 .particular__contact
@@ -118,6 +130,8 @@
         min-width: 100%
         padding: 10px
         font-size: 16px
+    @media (max-width: 320px)
+        font-size: 14px
 .particular__button 
     padding: 22px 30px
     white-space: nowrap
@@ -127,6 +141,9 @@
     @media (max-width: 576.98px)
         font-size: 13px
         padding: 10px
+    @media (max-width: 320px)
+        font-size: 10px
+        padding: 10px 5px
 .particular__img
     @media (max-width: 991.98px)
         display: none
@@ -379,7 +396,8 @@
         position: absolute
         transition: 0.5s
         background: rgba(0, 0, 0, 0.2) center / cover no-repeat
-        
+    @media (max-width: 320px)
+        padding-top: 80% 
 .project-item__img:hover
     transition: 0.5s
     background-size: auto 105%
@@ -399,8 +417,13 @@
     padding: 0px 30px 40px
 .project-slider__address 
     margin-bottom: 15px
+    @media (max-width: 576.98px)
+        font-size: 20px
 .project-slider__description 
     font-size: 20px
+    @media (max-width: 576.98px)
+        font-size: 16px
+        line-height: 110%
 .project-slider__mini-img 
     height: 130px
     display: flex
@@ -408,6 +431,8 @@
     margin: 10px -7px
     @media (max-width: 576.98px)
         height: 100px
+    @media (max-width: 320px)
+        height: 70px
 .mini-img__column
     flex: 0 1 25%
     border-radius: 10px

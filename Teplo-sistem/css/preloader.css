@@ -98,6 +98,18 @@
 
 @media (max-width: 576.98px) {
   #cube-loader .cube-loader {
-    width: 300px;
+    width: 100px;
+  }
+
+  #cube-loader .preloader-nutsone {
+    width: 15px;
+    left: 105%;
+    top: 35%;
+  }
+
+  #cube-loader .preloader-nutstwo {
+    width: 10px;
+    left: 96%;
+    top: 86%;
   }
 }

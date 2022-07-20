@@ -87,10 +87,18 @@
         min-width: 120px 
         line-height: 16px
         font-size: 14px
+    @media (max-width: 767.98px)
+        line-height: 12px
+        font-size: 12px
     @media (max-width: 576.98px)
         font-size: 10px
-        width: 82px
+        width: 140px
         line-height: 12px
+    @media (max-width: 320px)
+        font-size: 8px
+        width: 120px
+        line-height: 10px
+
 .navbar__mail 
     @media (max-width: 1400px)
         display: none
@@ -110,6 +118,12 @@
         font-size: 18px
     @media (max-width: 991.98px)
         padding: 4px 0px
+    @media (max-width: 576.98px)
+        font-size: 16px
+        line-height: 20px
+    @media (max-width: 320px)
+        font-size: 14px
+        line-height: 20px
     img
         position: absolute
         left: 50%
@@ -119,9 +133,8 @@
     padding-left: 50px
     position: relative
     img
-       stroke: yellow !important
-       fill: red !important
-       color: black  
+        @media (max-width: 320px)
+            width: 25px 
     
 .mail
 .mail:hover
@@ -154,6 +167,11 @@
         font-size: 16px
     @media (max-width: 767.98px)
         color:#ffffff
+    @media (max-width: 576.98px)
+        font-size: 14px
+    @media (max-width: 320px)
+
+        line-height: 18px
 
 
 .navbar-phone:hover
@@ -176,6 +194,11 @@
         font-size: 16px 
     @media (max-width: 991.98px)
         padding: 15px 20px
+    @media (max-width: 576.98px)
+        padding: 15px 20px
+    @media (max-width: 576.98px)
+        padding: 10px 15px
+        font-size: 15px
 .navbar__popup:hover
     transition: 0.5s
     border: 1px solid transparent
@@ -229,6 +252,8 @@
         justify-content: space-between
     @media (max-width: 576.98px)
         margin-top: 80px
+    @media (max-width: 320px)
+        margin-top: 60px
 .row 
 .menu-items
     flex: 63%
@@ -253,6 +278,12 @@
     @media (max-width: 767.98px)
         font-size: 20px
         margin: 10px
+    @media (max-width: 576.98px)
+        font-size: 18px
+        margin: 10px
+    @media (max-width: 320px)
+        font-size: 16px
+        margin: 7px
         
 .menu-item:hover
     color: #FFCC00
@@ -273,6 +304,10 @@
         margin: 15px
     @media (max-width: 576.98px)
         margin: 12px
+    @media (max-width: 320px)
+        width: 29px
+        height: 29px
+        margin: 10px 8px
     img
         max-width: 100%
 .social-img
@@ -329,6 +364,9 @@
         padding-top: 30px
         margin-bottom: 10px
         text-align: center
+    @media (max-width: 320px)
+        font-size: 35px
+        line-height: 40px
 .header__subtitle 
     font-weight: 300
     font-size: 28px
@@ -344,6 +382,11 @@
         text-align: center
     @media (max-width: 576.98px)
         font-size: 20px
+        line-height: 28px
+    @media (max-width: 320px)
+        font-size: 18px
+        line-height: 26px
+        
 .header__points 
     display: flex
     margin-bottom: 82px
@@ -356,23 +399,33 @@
         justify-content: space-around
     @media (max-width: 576.98px)
         margin-bottom: 0px
+    @media (max-width: 320px)
+        padding: 0 40px
 .header__point
     font-weight: 400
     font-size: 20px
     line-height: 24px
     max-width: 270px
-    @media (max-width: 767.98px)
-
-        font-size: 18px
-        margin-right: 20px
     position: relative
     padding-left: 55px
     margin-right: 50px
     margin-bottom: 30px
+    @media (max-width: 767.98px)
+        font-size: 18px
+        margin-right: 20px
+    @media (max-width: 576.98px)
+        margin-right: 0
+        margin-bottom: 20px
+    @media (max-width: 320px)
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 20px
     img
         position: absolute
         left: 0
         top: 0 
+        @media (max-width: 320px)
+            width: 35px
 .header__forms
     margin-bottom: 180px
     @media (max-width: 1400px)
@@ -401,6 +454,9 @@
     @media (max-width: 576.98px)
         font-size: 15px
         line-height: 16px
+    @media (max-width: 576.98px)
+        font-size: 13px
+        margin-bottom: 15px
 .input-phone
     background: #FFFFFF
     box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.4)
@@ -428,6 +484,9 @@
         color: rgba(0, 0, 0, 0.38)
         font-size: 13px
         padding-left: 20px
+    @media (max-width: 320px)
+        height: 40px
+
 
 
 .header__button 
@@ -441,6 +500,9 @@
         height: 50px
         font-size: 16px
         line-height: 15px
+    @media (max-width: 320px)
+        height: 40px
+        font-size: 14px
     position: relative
     animation: run 1s infinite
     margin-top: 20px

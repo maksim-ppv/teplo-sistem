@@ -20,7 +20,7 @@
       align-items: center;
       position: relative;
       @media (max-width: 576.98px){
-        width: 300px;
+        width: 100px;
       }
     }
     .preloader-logo { 
@@ -33,7 +33,11 @@
       top: 30%;
       transform: translate(-50%, -50%);
       animation: cube ease-in-out 2.5s reverse infinite;
-
+      @media (max-width: 576.98px){
+        width: 15px;
+        left: 105%;
+        top: 35%;
+      }
     }
     .preloader-nutstwo{ 
       width: 35px;
@@ -42,7 +46,11 @@
       top: 94%;
       transform: translate(-50%, -50%);
       animation: cube linear 2.5s infinite;
-      
+      @media (max-width: 576.98px){
+        width: 10px;
+        left: 96%;
+        top: 86%;
+      }
     }
     
   };

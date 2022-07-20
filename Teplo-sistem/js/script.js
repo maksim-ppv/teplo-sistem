@@ -4313,6 +4313,7 @@ if ($('.slider').length > 0) {
 					slidesToShow: 1
 				}
 			}
+			
 		]
 	});
 
@@ -4348,6 +4349,13 @@ if ($('.slider-three').length > 0) {
 				settings: {
 					slidesToShow: 1
 				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					arrows: false
+				}
 			}
 		]
 	});
@@ -4382,6 +4390,13 @@ if ($('.project-slider').length > 0) {
 				breakpoint: 768,
 				settings: {
 					slidesToShow: 1
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					arrows: false
 				}
 			}
 		]
