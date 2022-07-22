@@ -292,6 +292,7 @@
     text-align: right
     @media (max-width: 767.98px)
         text-align: center
+        
     
 
 .social-item
@@ -439,6 +440,7 @@
     @media (max-width: 576.98px)
         width: 100%
         padding: 0px 40px
+        margin-bottom: 40px
         
     form
         @media (max-width: 767.98px)
@@ -502,7 +504,7 @@
         line-height: 15px
     @media (max-width: 320px)
         height: 40px
-        font-size: 14px
+        font-size: 13px
     position: relative
     animation: run 1s infinite
     margin-top: 20px
@@ -517,6 +519,7 @@
         background: url('../img/button-left.svg') center / cover no-repeat
         animation: run-left linear 1s alternate infinite
         @media (max-width: 576.98px)
+            animation: run-left-mini linear 0.8s alternate infinite
             width: 20px
             height: 10px
             top: 52%
@@ -533,6 +536,7 @@
         background: url('../img/button-right.svg') center / cover no-repeat
         animation: run-right linear 1s alternate infinite
         @media (max-width: 576.98px)
+            animation: run-right-mini linear 0.8s alternate infinite
             width: 20px
             height: 10px
             top: 52%
@@ -584,3 +588,20 @@
     100% 
         right: 9%
         opacity: 0
+
+@keyframes run-left-mini
+    0% 
+        left: 0%
+    60%
+        opacity: 1
+    100% 
+        left: 3%
+        opacity: 0
+@keyframes run-right-mini
+    0% 
+        right: 0%
+    60%
+        opacity: 1
+    100% 
+        right: 3%
+        opacity: 0  

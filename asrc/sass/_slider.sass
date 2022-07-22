@@ -23,7 +23,11 @@
     picture
         img
             max-width: 100%
-            height: auto
+            height: 65px
+            @media (max-width: 991.98px)
+               height: 50px
+            @media (max-width: 576.98px)
+                height: 44px
 .slick-slider
     position: relative
 .slick-track,
@@ -44,9 +48,12 @@
     font-size: 0
     width: 60px
     height: 60px 
+    background: #5A5A5A
+    border-radius: 50%
     @media (max-width: 991.98px)
         width: 40px
         height: 40px
+
 .slick-prev
     @media (max-width: 767.98px)
         left: -10%
@@ -55,7 +62,29 @@
     @media (max-width: 320px)
         left: -20%
     left: -7%
-    background: url('../img/left.png') 0 0 / 100% no-repeat
+    &:after,&:before 
+        content: ''
+        width: 15px 
+        height: 2px
+        background-color: #fff
+        position: absolute
+        transition: 0.3s
+        @media (max-width: 991.98px)
+            width: 13px
+    &:before
+        top: 33px
+        right: 23px
+        transform: rotate(45deg)
+        @media (max-width: 991.98px)
+            top: 22px
+            right: 15px
+    &:after
+        top: 23px
+        right: 23px
+        transform: rotate(-45deg)
+        @media (max-width: 991.98px)
+            top: 14px
+            right: 15px
 .slick-next
     @media (max-width: 767.98px)
         right: -10%
@@ -64,4 +93,30 @@
     @media (max-width: 320px)
         right: -20%
     right: -7%
-    background: url('../img/right.png') 0 0 / 100% no-repeat
+    &:after,&:before 
+        content: ''
+        width: 15px 
+        height: 2px
+        background-color: #fff
+        position: absolute 
+        transition: 0.3s
+        @media (max-width: 991.98px)
+            width: 13px
+    &:before
+        top: 33px
+        right: 21px
+        transform: rotate(-45deg)
+        @media (max-width: 991.98px)
+            top: 22px
+            right: 13px
+    &:after
+        top: 23px
+        right: 21px
+        transform: rotate(45deg)
+        @media (max-width: 991.98px)
+            top: 14px
+            right: 13px
+.slick-next:hover,.slick-prev:hover,
+    &:after,&:before
+        transition: 0.3s
+        background-color: #FFCC00
