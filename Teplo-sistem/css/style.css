@@ -203,6 +203,11 @@ body {
   overflow-x: hidden;
 }
 
+section,
+header {
+  position: relative;
+}
+
 .overflow-hidden {
   width: 100%;
   overflow: hidden;
@@ -280,6 +285,7 @@ button {
   left: 0;
   top: 0;
   width: 100%;
+  height: 100%;
 }
 
 .bg img {
@@ -339,7 +345,6 @@ button {
 
 .header {
   overflow: hidden;
-  background: url("../img/bg-header.png") center/cover no-repeat;
   padding-top: 128px;
 }
 
@@ -1130,7 +1135,6 @@ button {
 .section-two {
   position: relative;
   overflow: hidden;
-  background: url("../img/bg2.png") top center/cover no-repeat;
   padding-top: 170px;
 }
 
@@ -1224,7 +1228,6 @@ button {
 
 .section-three {
   overflow: hidden;
-  background: url("../img/bg3.png") top center/cover no-repeat;
   padding-top: 170px;
 }
 
@@ -1421,7 +1424,6 @@ button {
 .section-four {
   position: relative;
   overflow: hidden;
-  background: url("../img/bg4.png") bottom center/cover no-repeat;
   padding-top: 170px;
 }
 
@@ -1850,7 +1852,6 @@ button {
 .section-fifth {
   position: relative;
   overflow: hidden;
-  background: url("../img/bg5.png") top center/cover no-repeat;
   padding-top: 80px;
 }
 
@@ -4548,15 +4549,7 @@ button {
   }
 }
 
-.webp .header { background: url(../img/bg-header.webp) center/cover no-repeat; }
-
-.webp .section-two { background: url(../img/bg2.webp) top center/cover no-repeat; }
-
 .webp .keys-block { background: url(../img/keys.webp) center right/cover no-repeat; }
-
-.webp .section-three { background: url(../img/bg3.webp) top center/cover no-repeat; }
-
-.webp .section-four { background: url(../img/bg4.webp) bottom center/cover no-repeat; }
 
 .webp .particular { background: url(../img/4main.webp) top center/cover no-repeat; }
 
@@ -4565,8 +4558,6 @@ button {
 .webp .contrast__content:before { background: url(../img/key42.webp) center/cover no-repeat; }
 
 .webp .contrast__content:after { background: url(../img/key43.webp) center/cover no-repeat; }
-
-.webp .section-fifth { background: url(../img/bg5.webp) top center/cover no-repeat; }
 
 .webp .keys-two { background: url(../img/keys5.webp) center/cover no-repeat; }
 

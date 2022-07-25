@@ -108,7 +108,7 @@ if ($('.slider-three').length > 0) {
 
 if ($('.project-slider').length > 0) {
 	$('.project-slider').slick({
-		autoplay: true,
+		// autoplay: true,
 		infinite: true,
 		dots: true,
 		arrows: true,
@@ -167,8 +167,8 @@ function ibg() {
 
 	let ibg = document.querySelectorAll(".ibg");
 	for (var i = 0; i < ibg.length; i++) {
-		if (ibg[i].querySelector('img')) {
-			ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('img').getAttribute('src') + ')';
+		if (ibg[i].querySelector('source')) {
+			ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('source').getAttribute('srcset') + ')';
 		}
 	}
 }

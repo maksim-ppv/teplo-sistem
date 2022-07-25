@@ -1,5 +1,6 @@
 
 @@include('preloader.js');
+@@include('jquery.fancybox.min.js');
 @@include('js_modules/burger.js');
 @@include('js_modules/dynamic-adaptiv.js');
 @@include('js_modules/parallax.js');
