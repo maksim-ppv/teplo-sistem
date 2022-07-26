@@ -1,7 +1,7 @@
 .option {
     position: relative;
     cursor: pointer;
-    padding-left: 35px;
+    padding-left: 27px;
     line-height: 16px;
     font-size: 15px;
     font-weight: 300;
@@ -18,12 +18,12 @@
         position: absolute;
         left: 0;
         top: 3px;
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         background: #5A5A5A;
         content: '';
-        border: 7px solid #282728;
-        box-shadow: 0px 0px 0px 3px #7E7E7E;
+        border: 5px solid #282728;
+        box-shadow: 0px 0px 0px 2px #7E7E7E;
         border-radius: 50%;
         transition: 0.3s;
     }
@@ -31,7 +31,7 @@
     &.active {
         &:before {
             background: #FFCC00;
-            box-shadow: 0px 0px 0px 3px #FFCC00;
+            box-shadow: 0px 0px 0px 2px #FFCC00;
         }
     }
 }

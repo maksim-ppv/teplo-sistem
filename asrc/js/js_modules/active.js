@@ -213,8 +213,26 @@ $(document).ready(() => {
 	});
 });
 
-// a = document.getElementsByTagName('html');
-// a[0].style.transform = "scale(0.75)";
+function getUrlParameter(sParam)
+    {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++) 
+        {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam) 
+            {
+                return sParameterName[1];
+            }
+        }
+    }   
+    
+    var sendInfo = getUrlParameter('type');
+    if(sendInfo=="success"){ 
+       const popupThanks = document.querySelector('#popup-thanks');
+	   popupThanks.classList.add('open');
+        history.pushState(null, null, window.location.pathname); 
+    }
 
 
 AOS.init();

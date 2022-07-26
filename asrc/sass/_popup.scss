@@ -7,7 +7,6 @@
 	top: 50%;
 	transform: translate(-50%,-50%);
 	width: 580px;
-	background: #282728;
 	border-radius: 27.2945px;
 	@media (max-width: 1024px) {
 		width: 700px;
@@ -185,11 +184,11 @@
 }
 
 
-.popup{
-	background: url('../img/popup.png') center / cover no-repeat;
+
+
+.popup-thanks{
+	background: #282728;
 }
-
-
 .open {
 	visibility: visible;
 	opacity: 1;
