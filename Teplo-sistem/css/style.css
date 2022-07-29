@@ -1672,7 +1672,7 @@ button {
           flex: 0 1 33.3%;
   font-weight: 400;
   font-size: 22px;
-  height: 75px;
+  min-height: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1734,6 +1734,8 @@ button {
   transition: 0.5s;
   background-size: 100% auto;
   cursor: pointer;
+  height: 80%;
+  max-height: 400px;
 }
 
 .project-item__img:before {
@@ -3209,9 +3211,9 @@ button {
     opacity: 0;
     visibility: hidden;
     position: fixed;
-    width: 70%;
+    width: 75%;
     padding-bottom: 50px;
-    left: -75%;
+    left: -80%;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
@@ -3520,7 +3522,7 @@ button {
   }
 
   .header__title {
-    font-size: 40px;
+    font-size: 35px;
     padding-top: 30px;
     margin-bottom: 10px;
     text-align: center;
@@ -3601,14 +3603,11 @@ button {
   }
 
   .hummer {
-    left: -8% !important;
-    top: 15% !important;
-    width: 150px;
+    display: none !important;
   }
 
   .pliers {
-    left: 65% !important;
-    width: 200px;
+    display: none !important;
   }
 
   .nuts_1 {
@@ -3660,10 +3659,6 @@ button {
   .key__description {
     margin-bottom: 15px;
     font-size: 22px;
-  }
-
-  .key__description div {
-    display: block;
   }
 
   .key__popup {
@@ -3861,7 +3856,7 @@ button {
   }
 
   .contrast__li-column {
-    height: 50px;
+    min-height: 50px;
   }
 
   .contrast__li-text {
@@ -4149,7 +4144,7 @@ button {
   }
 
   .header__title {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 40px;
   }
 
@@ -4249,6 +4244,13 @@ button {
   .key-two__button {
     padding: 10px 10px;
     font-size: 15px;
+  }
+}
+
+@media (max-width: 320.98px) {
+  .header__menu {
+    width: 85%;
+    left: -90%;
   }
 }
 

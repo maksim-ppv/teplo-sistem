@@ -4132,7 +4132,10 @@ function forms(){
             if (!target.is("a")){
                     $(this).toggleClass('active');
                 if($(this).hasClass('active')){
+                    console.log('helloy');
                     $(this).find('input').prop('checked', true);
+                    const Hell = $(this).find('input');
+                    console.log(Hell);
                 }else{
                     $(this).find('input').prop('checked', false);
                 }
