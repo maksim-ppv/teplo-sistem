@@ -1,6 +1,7 @@
 const menu = document.querySelector('.header__menu');
 const btn = document.querySelector('.menu-button');
 const navbar = document.querySelector('.navbar-header');
+const body = document.querySelector('body');
 
 
 
@@ -8,11 +9,8 @@ const modal = ()=>{
 
  
       menu.classList.toggle('show');
-
-   if ($(window).scrollTop() < 300) {
-      navbar.classList.toggle('fixed');
-    }
    btn.classList.toggle('line_active');
+   body.classList.toggle('lock');
 
 }
 

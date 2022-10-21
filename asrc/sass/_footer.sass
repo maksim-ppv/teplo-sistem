@@ -1,201 +1,105 @@
 .footer 
-    background: #282728
+    background: #333333
+    font-weight: 500
+    font-size: 14px
+    line-height: 170%
+    color: #FFFFFF
+    @media (max-width: 576.98px)
+        font-size: 13px
+        line-height: 170%
 .footer-up_block
-    padding: 89px 0 75px 0
+    padding: 100px 0 80px 0
     display: flex 
-    max-width: 1600px
     margin: auto
     justify-content: space-between
     @media (max-width: 991.98px)
         flex-wrap: wrap
-        padding: 70px 0 30px 0
+        padding: 70px 0 30px 35px
+        max-width: 600px
     @media (max-width: 576.98px)
         padding: 30px 15px 5px
 .footer-up_column
     flex: 0 1 25%
     display: flex
+    max-width: 228px
     flex-direction: column
-    align-items: center
     @media (max-width: 991.98px)
         margin-bottom: 30px
         flex: 0 1 50%
     @media (max-width: 576.98px)
-        margin-bottom: 10px
-        font-size: 14px
+        margin-bottom: 20px
         flex: 0 1 100%
-        align-items: flex-start
-.footer-item 
-.footer__logo
+        max-width: 100%
+        text-align: center
+        align-items: center
+
+
+.footer__logo 
+    padding-bottom: 57px
     @media (max-width: 576.98px)
-        display: flex
-        img
-            width: 150px
-            margin-right: 10px
-    a
+        padding-bottom: 35px
+.place
+    padding-bottom: 20px
+    span
+        color: #FFFFFF
+        text-decoration: underline 
+.phone-footer 
+    color: #FFFFFF
+
+.adress 
+    padding-bottom: 12px
+.props 
+    span
         display: block
-
-.footer__logo-desription 
-    display: block
-    max-width: 175px
-    font-weight: 300
-    font-size: 12px
-    line-height: 15px
-    text-align: left
+    padding-bottom: 28px
+.footer__callback 
+    img
+        margin-right: 20px
+        @media (max-width: 576.98px)
+            margin-left: 10px
+            margin-right: 10px
+.footer-li
+    color: #FFFFFF
+.opacity 
+    color: rgba(255, 255, 255, 0.5)
+.footer__title-column
+    padding-bottom: 25px
     @media (max-width: 576.98px)
-        font-size: 12px
-        line-height: 16px
-        max-width: 118px
-        
-.footer__contact 
+        padding-bottom: 10px
 
-    .time 
-        font-size: 14px
-        line-height: 17px
-        position: relative
-        padding-left: 15px
-        @media (max-width: 991.98px)
-            padding-left: 20px
-        @media (max-width: 576.98px)
-            line-height: 16px
-            font-size: 12px
-        &:before
-            content: ''
-            display: block
-            width: 8px
-            height: 8px
-            top: 50%
-            transform: translateY(-50%)
-            left: 0
-            border-radius: 50%
-            position: absolute
-            background: #27B837
-    .time:hover
-        color: #ffffff
-
-.footer__mail
-    .data
-        font-size: 18px
-        @media (max-width: 576.98px)
-            font-size: 15px
-            line-height: 18px
-        img
-            @media (max-width: 576.98px)
-                width: 20px
-        .data__img
-            @media (max-width: 576.98px)
-                padding-left: 30px
-    .mail
-        font-size: 17px
-
-.footer-phone
-    font-weight: 500
-    font-size: 20px
-    line-height: 24px
-    transition: 0.5s
-    color: #FFFFFf 
-
-    @media (max-width: 1199px)
-        font-size: 19px
-    @media (max-width: 576.98px)
-        line-height: 20px
-        font-size: 16px
-.footer-phone:hover
-    transition: 0.5s
-    color: #FFCC00
-
-
-.footer__callback
-    .social-item
-        margin: 0 0 0 15px
-        @media (max-width: 576.98px)
-            margin: 5px 10px 
-.social-img 
-
-
-
-
-
-
-.footer-menu 
-    padding: 20px
-    border-top: 1px solid rgba(255, 255, 255, 0.2)
-    justify-content: space-around
-    @media (max-width: 767.98px)
-        padding: 15px
-.row 
-.footer-items
-    width: 100% 
-    max-width: 1200px
-    margin: auto
-    @media (max-width: 576.98px)
-        flex-direction: column
-        align-items: flex-start
-    .menu-item 
-        @media (max-width: 767.98px)
-            font-size: 14px
-        @media (max-width: 576.98px)
-            margin: 7px
-
-
-
+ 
 
 //===============================================================
 
 
 .developer
     position: relative
-    height: 60px
-    background: #353535
+    padding: 20px 0px 16px
     display: flex
     align-items: center
-    justify-content: center
-
+    justify-content: space-between
+    border-top: 1px solid rgba(255, 255, 255, 0.1)
     @media (max-width: 576.98px)
         justify-content: flex-end
+.developer-description
+    font-weight: 500
+    font-size: 12px
+    line-height: 120%
 .up
     width: 41px
     height: 41px
-    left: 2%
-    top: 50%
-    transform: translateY(-50%)
+    right: -50px
+    bottom: 10px
+    padding: 10px
+    padding-top: 13px
     position: absolute
     background: #D9D9D9
     border-radius: 50%
     img
         width: 100%
-    @media (max-width: 767.98px)
+    @media (max-width: 991.98px)
         width: 35px
         height: 35px
-        opacity: 0
-        top: 96%
-        position: fixed
-        visibility: hidden
-        transition: 0.4s
     @media (max-width: 576.98px)
-        left: 5%
-.developer-name
-    margin: auto
-    font-weight: 400
-    font-size: 14px
-    line-height: 17px
-    display: flex
-    align-items: center
-    text-align: center
-    @media (max-width: 767.98px)
-        font-size: 15px
-    @media (max-width: 576.98px)
-        font-size: 13px
-        margin-right: 5%
-    img
-        padding-left: 15px
-        @media (max-width: 576.98px)
-            padding-left: 10px
-    a
-        transition: 0.3s
-        color: #FFFFFF
-        margin-left: 5px
-        display: flex
-        align-items: center
-    a:hover
-        transition: 0.3s
-        color: #FFCC00
+        left: 90%
+        bottom: 15px
