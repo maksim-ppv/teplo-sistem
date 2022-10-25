@@ -4,16 +4,15 @@
 <head>
 
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./img/logo-1.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;500;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Teplo-system</title>
+    <title>Testsite</title>
 </head>
 
 <body>
@@ -21,9 +20,8 @@
     <div id="cube-loader">
         <div class="caption">
             <div class="cube-loader">
-                <img class="preloader-logo" src="./img/logo.png" alt="" />
-                <img class="preloader-nutsone" src="./img/preloader/nuts1.png" alt="" />
-                <img class="preloader-nutstwo" src="./img/preloader/nuts2.png" alt="" />
+                <img class="preloader-logo logo-1" src="./img/logo-1.png" alt="" />
+                <img class="preloader-logo logo-2" src="./img/logo-2.png" alt="" />
             </div>
         </div>
     </div>
@@ -31,570 +29,90 @@
 
         @@include('_header.html')
         <main class="main">
-            <section id="seils" class="section-two">
-                <div class="bg ibg" style="background-position: top">
-                    <img src="./img/bg2.png" alt="">
-                </div>
-                <div class="cars-bg parallax">
-                    <img class="parallax-layer hummer" data-depth="0.1" src="./img/parallax/pliers.png" alt="" />
-                </div>
-                <div class="cars-bg parallax">
-                    <img class="parallax-layer pliers" data-depth="0.1" src="./img/parallax/hammer.png" alt="" />
-                </div>
+            <section class="digital">
                 <div class="container">
-                    <div class="keys-block">
-                        <div class="key-block">
-                            <div class="key__title"><span>Выгодный монтаж!</span></div>
-                            <div class="key__description">Скидка на монтаж <div> «под ключ» <span
-                                class="yellow">10%,</span></div> при заказе всего объема необходимого<br> оборудования
-                                и монтажных услуг</div>
-                            <a href="#popup" class="key__popup button popup-link">Получить скидку</a>
+                    <h2 class="title digital-title"><span class="color-orange">Антикризисные </span>DIGITAL-пакеты</h2>
+                    <div class="digital-bags">
+                        <div class="bag column ibg">
+                            <img src="./img/digital-photo1.png" alt="">
+                            <div class="bag-title bag-line">СТАБИЛЬНАЯ<br>
+                                ЛИДОГЕНЕРАЦИЯ
+                                В КРИЗИС</div>
+                            <div class="bag-subtitle bag-line">SEO-продвижение +
+                                Контекстная реклама</div>
+                            <div class="bag-description">Ищете сплит каналов для
+                                стабильного лидгена? 
+                                Нет ничего
+                                надежнее классики!</div>
+                            <div class="bag-subtitle">Специальная скидка до 40% на каждую услугу в пакете</div>
+                            <button class="button__orange-transparent button__digital">Приобрести пакет</button>
                         </div>
-                    </div>
-                    <h2 class="title title-one"><span class="line line-left"></span>
-                        <div class="title-block">Принципы нашего успеха</div><span class="line line-right"></span>
-                    </h2>
-
-                    <div class="principle-blocks">
-                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="0" class="principle__item">
-                            <div class="principle__img"><img src="./img/21.png" alt=""></div>
-                            <div class="principle__text">
-                                <span class="principle__title">5 лет гарантии<br> на работы</span>
-                                <p class="principle__desription">Мы несём ответственность за качество работы,
-                                    предоставляем гарантию на все виды работ</p>
-                            </div>
+                        <div class="bag column ibg">
+                            <img src="./img/digital-photo2.png" alt="">
+                            <div class="bag-title bag-line">УСИЛЕНИЕ<br>
+                                ЛИДОГЕНЕРАЦИИ
+                                В КРИЗИС</div>
+                            <div class="bag-subtitle bag-line">SEO-продвижение +
+                                Управление репутацией</div>
+                            <div class="bag-description">Добавьте к классическому
+                                продвижению работу с
+                                профильными площадками и
+                                отзовиками.</div>
+                            <div class="bag-subtitle">Специальная скидка до 40% на каждую услугу в пакете</div>
+                            <button class="button__orange-transparent button__digital">Приобрести пакет</button>
                         </div>
-                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="500" class="principle__item">
-                            <div class="principle__img"><img src="./img/22.png" alt=""></div>
-                            <div class="principle__text">
-                                <span class="principle__title">25 лет гарантии<br> на материал</span>
-                                <p class="principle__desription">Мы работаем с проверенными поставщиками,
-                                    предоставляющими качественные комплектующие с официальной гарантией</p>
-                            </div>
-                        </div>
-                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="1000" class="principle__item">
-                            <div class="principle__img"><img src="./img/23.png" alt=""></div>
-                            <div class="principle__text">
-                                <span class="principle__title">Выполнение работ<br> точно в срок</span>
-                                <p class="principle__desription">Мы дорожим своей репутацией и ценим время своих
-                                    клиентов, поэтому выполняем работы точно в оговоренные сроки</p>
-                            </div>
-                        </div>
-                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="0" class="principle__item">
-                            <div class="principle__img"><img src="./img/24.png" alt=""></div>
-                            <div class="principle__text">
-                                <span class="principle__title">Послегарантийное<br> обслуживание</span>
-                                <p class="principle__desription">Мы продолжаем сотрудничать со своими клиентами даже
-                                    после окончания срока действия гарантии</p>
-                            </div>
-                        </div>
-                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="500" class="principle__item">
-                            <div class="principle__img"><img src="./img/25.png" alt=""></div>
-                            <div class="principle__text">
-                                <span class="principle__title">Выгодные цены<br> и условия</span>
-                                <p class="principle__desription">Мы исключили всех посредников, чтобы предоставить
-                                    самые лучшие цены, а так же гибкие условия оплаты</p>
-                            </div>
-                        </div>
-                    </div>
-                    <h2 id="partners" class="title title-two"><span class="line line-left"></span>
-                        <div class="title-block">Мы работаем с крупнейшими компаниями</div><span
-                            class="line line-right"></span>
-                    </h2>
-                    <span class="subtitle subtitle-two">Мы работаем с крупнейшими производителями строительных
-                        материалов и оборудования</span>
-                    <div class="section__slider">
-                        <div class="slider slider-one">
-                            <div class="slider__item"><img src="./img/viessman.png" alt="image-1" class="slider__img">
-                            </div>
-                            <div class="slider__item"><img src="./img/herz.png" alt="image-1" class="slider__img"></div>
-                            <div class="slider__item"><img src="./img/tece.png" alt="image-1" class="slider__img"></div>
-                            <div class="slider__item"><img src="./img/viessman.png" alt="image-1" class="slider__img">
-                            </div>
-                            <div class="slider__item"><img src="./img/herz.png" alt="image-1" class="slider__img"></div>
-                            <div class="slider__item"><img src="./img/tece.png" alt="image-1" class="slider__img"></div>
+                        <div class="bag column ibg">
+                            <img src="./img/digital-photo3.png" alt="">
+                            <div class="bag-title bag-line">АНТИБЛОКИРОВКА<br>
+                                В СОЦСЕТЯХ</div>
+                            <div class="bag-subtitle bag-line">SEO-продвижение +
+                                Таргет + Маркетплейсы</div>
+                            <div class="bag-description">Основные каналы лидгена попали
+                                под блокировку? 
+                                У нас уже есть
+                                работающее решение.</div>
+                            <div class="bag-subtitle">Специальная скидка до 20% на каждую услугу в пакете</div>
+                            <button class="button__orange-transparent button__digital">Приобрести пакет</button>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section-three ">
-                <div class="bg ibg" style="background-position: top">
-                    <img src="./img/bg3.png" alt="">
-                </div>
+            <section class="advantage">
                 <div class="container">
-                    <div class="title-service">Предоставляем широкий выбор услуг</div>
-                    <div class="numbers">
-                        <div class="number-item">
-                            <div class="number yellow">01</div>
-                            <span class="number__text">Частное домостроение</span>
+                    <h2 class="title advantage-title">Преимущества работы с нами</h2>
+                    <div class="advantage-row row">
+                        <div class="advantage-column column">
+                            <img src="./img/advantage1.svg" alt="">
+                            <span class="advantage-description">Увеличиваем продажи, звонки<br> и заявки с Вашего сайта</span>
                         </div>
-                        <div class="number-item">
-                            <div class="number yellow">02</div>
-                            <span class="number__text">Коммерческие помещения</span>
+                        <div class="advantage-column column">
+                            <img src="./img/advantage2.svg" alt="">
+                            <span class="advantage-description">Используем современные технологии<br> и собственные разработки</span>
                         </div>
-                        <div class="number-item">
-                            <div class="number yellow">03</div>
-                            <span class="number__text">Производственные и складские помещения</span>
+                        <div class="advantage-column column">
+                            <img src="./img/advantage3.svg" alt="">
+                            <span class="advantage-description">Всегда оправдываем ожидания<br> наших Клиентов</span>
                         </div>
-
-                    </div>
-                    <h2 id="service" class="title title-three yellow"><span class="line yellow line-left"></span>
-                        <div class="title-block">Каталог услуг</div><span class="line yellow line-right"></span>
-                    </h2>
-                    <div class="section__slider section__slider-three">
-                        <div class="slider-three">
-                            <div class="slider-three__item">
-                                <div class="slider-item__img ibg">
-                                    <img src="./img/31.png" alt="image-1" class="slider__img">
-                                </div>
-                                <div class="slider-item__content">
-                                    <div class="slider-item__content-up">
-                                        <h3 class="slider-item__title">Монтаж систем отопления</h3>
-                                        <div class="slider-item__block">
-                                            <ul>
-                                                <li>Разработка проектов</li>
-                                                <li>Выполнение монтажных работ</li>
-                                                <li>Гарантийное и послегарантийное обслуживание</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__content-down">
-                                        <div class="slider-item__price">Цена от <span>800 BYN</span></div>
-                                        <a href="#popup" class="slider-item__popup button popup-link">Заказать услугу</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slider-three__item">
-                                <div class="slider-item__img ibg">
-                                    <img src="./img/32.png" alt="image-1" class="slider__img ibg">
-                                </div>
-                                <div class="slider-item__content">
-                                    <div class="slider-item__content-up">
-                                        <h3 class="slider-item__title">Монтаж систем<br> водоснабжения, канализации
-                                        </h3>
-                                        <div class="slider-item__block">
-                                            <ul >
-                                                <li >Поставка комплектующих</li>
-                                                <li >Выполнение монтажных работ</li>
-                                                <li >Производство земляных работ</li>
-                                                <li >Монтаж септиков и железобетонных колодцев</li>
-                                                <li >Согласование проектов в надзорных органах</li>
-    
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__content-down">
-                                        <div class="slider-item__price">Цена от <span>1000 BYN</span></div>
-                                        <a href="#popup" class="slider-item__popup button popup-link">Заказать услугу</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slider-three__item">
-                                <div class="slider-item__img ibg">
-                                    <img src="./img/33.png" alt="image-1" class="slider__img ibg">
-                                </div>
-                                <div class="slider-item__content">
-                                    <div class="slider-item__content-up">
-                                        <h3 class="slider-item__title">Монтаж систем кондиционирования
-                                            и вентиляции </h3>
-                                            <div class="slider-item__block">
-                                                <ul >
-                                                    <li >Поставка комплектующих</li>
-                                                    <li >Выполнение монтажных работ</li>
-                                                    <li >Гарантийное и послегарантийное обслуживание</li>
-                                                </ul>
-                                            </div>
-                                    </div>
-                                    <div class="slider-item__content-down">
-                                        <div class="slider-item__price">Цена от <span>900 BYN</span></div>
-                                        <a href="#popup" class="slider-item__popup button popup-link">Заказать услугу</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slider-three__item">
-                                <div class="slider-item__img ibg">
-                                    <img src="./img/32.png" alt="image-1" class="slider__img ibg">
-                                </div>
-                                <div class="slider-item__content">
-                                    <div class="slider-item__content-up">
-                                        <h3 class="slider-item__title">Монтаж систем<br> водоснабжения, канализации
-                                        </h3>
-                                        <div class="slider-item__block">
-                                            <ul >
-                                                <li >Поставка комплектующих</li>
-                                                <li >Выполнение монтажных работ</li>
-                                                <li >Производство земляных работ</li>
-                                                <li >Монтаж септиков и железобетонных колодцев</li>
-                                                <li >Согласование проектов в надзорных органах</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="slider-item__content-down">
-                                        <div class="slider-item__price">Цена от <span>1000 BYN</span></div>
-                                        <a href="#popup" class="slider-item__popup button popup-link">Заказать услугу</a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="advantage-column column">
+                            <img src="./img/advantage4.svg" alt="">
+                            <span class="advantage-description">Более 100 благодарственных<br> писем от Клиентов</span>
                         </div>
-                        <div class="step-slider__controls"></div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-four ">
-                <div class="bg ibg" style="background-position: bottom">
-                    <img src="./img/bg4.png" alt="">
-                </div>
-                <div class="container">
-                    <div class="particular">
-                        <div class="particular__row">
-                            <div class="particular__content">
-                                <div class="particular__title yellow">Выберите нужную услугу и узнайте <div class="particular__title-row">
-                                    <p>
-                                        о ней подробнее  </p>   
-                                        <span class="line yellow particular__title-line"></span>
-                                </div>     
-                                </div>
-                                <form action="">
-                                    <div class="chekbox-blocks">
-                                        <div class="chekbox-block">
-                                                <div class="options">
-                                                <div class="option  option_all active">
-                                                    <div class="options-social">Монтаж системы отопления </div><input
-                                                        type="checkbox" value="1" name="form[type]" />
-                                                </div>
-                                                <div class="option option_all">
-                                                    <div class="options-social">Изготовление и монтаж системы теплого
-                                                        пола</div><input type="checkbox" value="1" name="form[type]" />
-                                                </div>
-                                                <div class="option option_all">
-                                                    <div class="options-social">Установка радиаторов</div><input
-                                                        type="checkbox" value="1" name="form[type]" />
-                                                </div>
-                                                <div class="option option_all">
-                                                    <div class="options-social">Обвязка котла, включая монтаж гребенки</div><input
-                                                        type="checkbox" value="1" name="form[type]" />
-                                                </div>
-                                                <div class="option option_all">
-                                                    <div class="options-social">Установка котла</div><input
-                                                        type="checkbox" value="1" name="form[type]" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="chekbox-block">
-                                            <div class="option  option_all">
-                                                <div class="options-social">Монтаж системы регулирования температуры по контурам</div><input
-                                                    type="checkbox" value="1" name="form[type]" />
-                                            </div>
-                                            <div class="option option_all">
-                                                <div class="options-social">Монтаж водоснабжения</div><input type="checkbox" value="1" name="form[type]" />
-                                            </div>
-                                            <div class="option option_all">
-                                                <div class="options-social">Монтаж автономных канализаций</div><input
-                                                    type="checkbox" value="1" name="form[type]" />
-                                            </div>
-                                            <div class="option option_all">
-                                                <div class="options-social">Другая услуга</div><input
-                                                    type="checkbox" value="1" name="form[type]" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="particular__contact">
-                                        <input type="tel"
-                                        class="input-phone particular__phone    form__inputs phone _req form__wish"
-                                        placeholder="Ваш телефон" required>
-                                    <button type="submit" class="particular__button button">Получить консультацию
-                                        специалиста</button>
-
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="particular__img">
-                                <img src="./img/men2.png" alt="">
-                            </div>
+                        <div class="advantage-column column">
+                            <img src="./img/advantage5.svg" alt="">
+                            <span class="advantage-description">Безупречная репутация<br> на digital-рынке</span>
                         </div>
-                    </div>
-                    <h2 id="advantage" class="title title-four"><span class="line line-left"></span>
-                        <div class="title-block">Отличие компании Teplo-system от конкурентов</div><span class="line line-right"></span>
-                    </h2>
-                    <div class="contrast-block">
-                        <div class="contrast__title-row">
-                            <div class="contrast__title-column contrast__one">Ключевые выгоды</div>
-                            <div class="contrast__title-column contrast__teplo">Teplo-system</div>
-                            <div class="contrast__title-column contrast__IP">ИП, частные монтажники, другие малые компании</div>
-                        </div>
-                        <div class="contrast__content">
-                            <ul class="contrast__ul">
-                                <li class="contrast__li-row">
-                                    <div class="contrast__li-column contrast__li-text">
-                                        <img class="contrast__li-img" src="./img/ok.svg" alt="">
-                                        <p> Зафиксированная в договоре и неизменная стоимость всех работ</p>
-                                    </div>
-                                    <div class="contrast__li-column contrast__li-okey">
-                                        <img class="contrast__li-img" src="./img/ok.svg" alt="">
-                                        
-                                    </div>
-                                    <div class="contrast__li-column contrast__li-no">
-                                        <img class="contrast__li-img" src="./img/no.svg" alt="">
-
-                                    </div>
-                                </li>
-                                <li class="contrast__li-row">
-                                    <div class="contrast__li-column contrast__li-text">
-                                        <img class="contrast__li-img" src="./img/ok.svg" alt="">
-                                        <p> Предоставление долгосрочных гарантий и на работы и на материалы</p>
-                                    </div>
-                                    <div class="contrast__li-column contrast__li-okey">
-                                        <img class="contrast__li-img" src="./img/ok.svg" alt="">
-                                        
-                                    </div>
-                                    <div class="contrast__li-column contrast__li-no">
-                                        <img class="contrast__li-img" src="./img/no.svg" alt="">
-
-                                    </div>
-                                </li>
-                                <li class="contrast__li-row">
-                                    <div class="contrast__li-column contrast__li-text">
-                                        <img class="contrast__li-img" src="./img/ok.svg" alt="">
-                                        <p>Расчёт сметы делает только квалифицированный специалист</p>
-                                    </div>
-                                    <div class="contrast__li-column contrast__li-okey">
-                                        <img class="contrast__li-img" src="./img/ok.svg" alt="">
-                                        
-                                    </div>
-                                    <div class="contrast__li-column contrast__li-no">
-                                        <img class="contrast__li-img" src="./img/no.svg" alt="">
-
-                                    </div>
-                                </li>
-                                <li class="contrast__li-row">
-                                    <div class="contrast__li-column contrast__li-text">
-                                        <img class="contrast__li-img" src="./img/ok.svg" alt="">
-                                        <p> Большой стаж работы монтажников</p>
-                                    </div>
-                                    <div class="contrast__li-column contrast__li-okey">
-                                        <img class="contrast__li-img" src="./img/ok.svg" alt="">
-                                        
-                                    </div>
-                                    <div class="contrast__li-column contrast__li-no">
-                                        <img class="contrast__li-img" src="./img/no.svg" alt="">
-
-                                    </div>
-                                </li>
-                                <li class="contrast__li-row">
-                                    <div class="contrast__li-column contrast__li-text">
-                                        <img class="contrast__li-img" src="./img/ok.svg" alt="">
-                                        <p>Абсолютно правильная запайка труб</p>
-                                    </div>
-                                    <div class="contrast__li-column contrast__li-okey">
-                                        <img class="contrast__li-img" src="./img/ok.svg" alt="">
-                                        
-                                    </div>
-                                    <div class="contrast__li-column contrast__li-no">
-                                        <img class="contrast__li-img" src="./img/no.svg" alt="">
-
-                                    </div>
-                                </li>
-                                <li class="contrast__li-row">
-                                    <div class="contrast__li-column contrast__li-text">
-                                        <img class="contrast__li-img" src="./img/ok.svg" alt="">
-                                        <p> Возможность предоставления компанией целого комплекса услуг</p>
-                                    </div>
-                                    <div class="contrast__li-column contrast__li-okey">
-                                        <img class="contrast__li-img" src="./img/ok.svg" alt="">
-                                        
-                                    </div>
-                                    <div class="contrast__li-column contrast__li-no">
-                                        <img class="contrast__li-img" src="./img/ok.svg" alt="">
-
-                                    </div>
-                                </li>
-                                <li class="contrast__li-row">
-                                    <div class="contrast__li-column contrast__li-text">
-                                        <img class="contrast__li-img" src="./img/ok.svg" alt="">
-                                        <p> Только качественные и проверенные материалы</p>
-                                    </div>
-                                    <div class="contrast__li-column contrast__li-okey">
-                                        <img class="contrast__li-img" src="./img/ok.svg" alt="">
-                                        
-                                    </div>
-                                    <div class="contrast__li-column contrast__li-no">
-                                        <img class="contrast__li-img" src="./img/no.svg" alt="">
-
-                                    </div>
-                                </li>
-                                <li class="contrast__li-row">
-                                    <div class="contrast__li-column contrast__li-text">
-                                        <img class="contrast__li-img" src="./img/ok.svg" alt="">
-                                        <p>Обязательное присутствие на объекте старшего прораба</p>
-                                    </div>
-                                    <div class="contrast__li-column contrast__li-okey">
-                                        <img class="contrast__li-img" src="./img/ok.svg" alt="">
-                                        
-                                    </div>
-                                    <div class="contrast__li-column contrast__li-no">
-                                        <img class="contrast__li-img" src="./img/ok.svg" alt="">
-
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <h2 id="gallery" class="title title-fifth"><span class="line line-left"></span>
-                        <div class="title-block">Успешно реализовали более 115 проектов за 7 лет</div><span class="line line-right"></span>
-                    </h2>
-                    <div class="projects">
-                        <div class="cars-bg parallax">
-                            <img class="parallax-layer nuts_1" data-depth="0.1" src="./img/parallax/nuts1.png" alt="" />
-                        </div>
-                        <div class="cars-bg parallax">
-                            <img class="parallax-layer nuts_2" data-depth="0.05" src="./img/parallax/nuts2.png" alt="" />
-                        </div>
-                        <div class="section__slider section__slider-three section__slider-project">
-                            <div class="project-slider">
-
-                                <div class="slider-three__item project-slider__item">
-                                    <div class="slider-item__img project-item__img ibg">
-                                        <img src="./img/slider-41.png" alt="image-1" class="slider__img ibg">
-                                        <div class="project-slider__name">
-                                            <h3 class="project-slider__address">Новаторская, 115</h3>
-                                            <p class="project-slider__description">Изготовление и монтаж системы теплого пола</p>
-                                        </div>
-                                    </div>
-                                    <div class="project-slider__mini-img">
-                                        <a data-fancybox="images" href="./img/slider-42.png" class="mini-img__column ibg"><img src="./img/slider-41.1.png" alt=""></a>
-                                        <a data-fancybox="images" href="./img/slider-41.png" class="mini-img__column ibg"><img src="./img/slider-41.4.png" alt=""></a>
-                                        <a data-fancybox="images" href="./img/slider-41.3.png" class="mini-img__column ibg"><img src="./img/slider-41.3.png" alt=""></a>
-                                        <a data-fancybox="images" href="./img/slider-43.png" class="mini-img__column ibg"><img src="./img/slider-41.2.png" alt=""></a>
-                                    </div>
-                                </div>
-                                <div class="slider-three__item project-slider__item">
-                                    <div class="slider-item__img project-item__img ibg">
-                                        <img src="./img/slider-42.png" alt="image-1" class="slider__img ibg">
-                                        <div class="project-slider__name">
-                                            <h3 class="project-slider__address">Новаторская, 115</h3>
-                                            <p class="project-slider__description">Изготовление и монтаж системы теплого пола</p>
-                                        </div>
-                                    </div>
-                                    <div class="project-slider__mini-img">
-                                        <a data-fancybox="images" href="./img/slider-42.png" class="mini-img__column ibg"><img src="./img/slider-41.1.png" alt=""></a>
-                                        <a data-fancybox="images" href="./img/slider-41.png" class="mini-img__column ibg"><img src="./img/slider-41.4.png" alt=""></a>
-                                        <a data-fancybox="images" href="./img/slider-41.3.png" class="mini-img__column ibg"><img src="./img/slider-41.3.png" alt=""></a>
-                                        <a data-fancybox="images" href="./img/slider-43.png" class="mini-img__column ibg"><img src="./img/slider-41.2.png" alt=""></a>
-                                    </div>
-                                </div>
-                                <div class="slider-three__item project-slider__item">
-                                    <div class="slider-item__img project-item__img ibg">
-                                        <img src="./img/slider-43.png" alt="image-1" class="slider__img ibg">
-                                        <div class="project-slider__name">
-                                            <h3 class="project-slider__address">Новаторская, 115</h3>
-                                            <p class="project-slider__description">Изготовление и монтаж системы теплого пола</p>
-                                        </div>
-                                    </div>
-                                    <div class="project-slider__mini-img">
-                                        <a data-fancybox="images" href="./img/slider-42.png" class="mini-img__column ibg"><img src="./img/slider-41.1.png" alt=""></a>
-                                        <a data-fancybox="images" href="./img/slider-41.png" class="mini-img__column ibg"><img src="./img/slider-41.4.png" alt=""></a>
-                                        <a data-fancybox="images" href="./img/slider-41.3.png" class="mini-img__column ibg"><img src="./img/slider-41.3.png" alt=""></a>
-                                        <a data-fancybox="images" href="./img/slider-43.png" class="mini-img__column ibg"><img src="./img/slider-41.2.png" alt=""></a>
-                                    </div>
-                                </div>
-                                <div class="slider-three__item project-slider__item">
-                                    <div class="slider-item__img project-item__img ibg">
-                                        <img src="./img/slider-42.png" alt="image-1" class="slider__img ibg">
-                                        <div class="project-slider__name">
-                                            <h3 class="project-slider__address">Новаторская, 115</h3>
-                                            <p class="project-slider__description">Изготовление и монтаж системы теплого пола</p>
-                                        </div>
-                                    </div>
-                                    <div class="project-slider__mini-img">
-                                        <a data-fancybox="images" href="./img/slider-42.png" class="mini-img__column ibg"><img src="./img/slider-41.1.png" alt=""></a>
-                                        <a data-fancybox="images" href="./img/slider-41.png" class="mini-img__column ibg"><img src="./img/slider-41.4.png" alt=""></a>
-                                        <a data-fancybox="images" href="./img/slider-41.3.png" class="mini-img__column ibg"><img src="./img/slider-41.3.png" alt=""></a>
-                                        <a data-fancybox="images" href="./img/slider-43.png" class="mini-img__column ibg"><img src="./img/slider-41.2.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-slider__controls"></div>
+                        <div class="advantage-column column">
+                            <img src="./img/advantage6.svg" alt="">
+                            <span class="advantage-description">Помогаем достигать имиджевых<br> и финансовых целей</span>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section-fifth">
-                <div class="bg ibg" style="background-position: top">
-                    <img src="./img/bg5.png" alt="">
-                </div>
-                <div class="cars-bg parallax">
-                    <img class="parallax-layer pliers_2" data-depth="0.1" src="./img/parallax/pliers2.png" alt="" />
-                </div>
-                <div class="cars-bg parallax">
-                    <img class="parallax-layer perforator_2" data-depth="0.15" src="./img/parallax/perforator.png" alt="" />
-                </div>
-                <div class="container">
-                    <h2 id="steps" class="title title-six"><span class="line line-left"></span>
-                        <div class="title-block">Выполняем работу качественно и вовремя</div><span class="line line-right"></span>
-                    </h2>
-                    <div class="antecedency">
-                        <div class="antecedency__column">
-                            <div class="antecedency__img ibg"><img src="./img/51.png" alt=""></div>
-                            <div class="antecedency__img-line"><img src="./img/rules.png" alt=""></div>
-                            <span class="antecedency__number">01</span>
-                            <p class="antecedency__description">Вы оставляете<br>
-                                заявку на сайте.
-                                Мы связываемся с Вами
-                                и уточняем все детали</p>
-                        </div>
-                        <div class="antecedency__column">
-                            <div class="antecedency__img ibg"><img src="./img/52.png" alt=""></div>
-                            <div class="antecedency__img-line"><img src="./img/rules.png" alt=""></div>
-                            <span class="antecedency__number">02</span>
-                            <p class="antecedency__description">Мы проектируем                          и производим все расчеты 
-                                для Вашего проекта.  
-                                Подготавливаем договор</p>
-                        </div>
-                        <div class="antecedency__column">
-                            <div class="antecedency__img ibg"><img src="./img/53.png" alt=""></div>
-                            <div class="antecedency__img-line"><img src="./img/rules.png" alt=""></div>
-                            <span class="antecedency__number">03</span>
-                            <p class="antecedency__description">Согласование  договора 
-                                и порядка оплаты. 
-                                Доставка материала на объект. 
-                                Оплата за материал</p>
-                        </div>
-                        <div class="antecedency__column">
-                            <div class="antecedency__img ibg"><img src="./img/54.png" alt=""></div>
-                            <div class="antecedency__img-line"><img src="./img/rules.png" alt=""></div>
-                            <span class="antecedency__number">04</span>
-                            <p class="antecedency__description">Выполнение монтажных работ <br>
-                                в оговоренный срок и 
-                                окончательный расчёт</p>
-                        </div>
-                    </div>
-                    <div class="keys-two">
-                        <div class="key-block key-two">
-                            <div class="key-two__content">
-                                <div class="key__title key-twotitle"><span>Расширенная гарантия</span></div>
-                                <div class="key__description key-two__description">Закажите подбор оптимального варианта оборудования и получите <span class="yellow">1 год дополнительной гарантии</span> на монтажные работы</div>
-                                <form action="" class="key-two__form">
-                                    <input type="tel" class="input-phone header__phone key-two__phone   form__inputs phone" placeholder="Ваш телефон" required>
-                                    <button type="submit" class="button key-two__button">Заказать оборудование</button>
-                                </form>
-                            </div>
-                            <div class="key-two__img"><img src="./img/keytwo.png" alt=""></div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-
-
-
 
         </main>
         @@include('_footer.html')
-        @@include('_popup.html')
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
